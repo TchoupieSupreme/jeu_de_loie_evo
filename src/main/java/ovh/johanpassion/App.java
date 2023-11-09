@@ -20,7 +20,7 @@ public class App {
             if (20-caseActuelle !=0) {
                 System.out.println("Vous avez perdu !");
             }
-        } while (20-caseActuelle == 0);
+        } while (20-caseActuelle != 0);
          System.out.println("Vous avez gagné !");
         clavier.close();
     }
