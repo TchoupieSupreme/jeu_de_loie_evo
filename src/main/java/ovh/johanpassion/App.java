@@ -13,7 +13,6 @@ public class App {
         do {
             caseActuelle =0;
             for (int i =0;i<5;i++){     
-                clavier.nextLine();      
                 int lancer = generateur.nextInt(6)+1;
                 caseActuelle += lancer;
                 if (20-caseActuelle>0) {
