@@ -8,6 +8,7 @@ public class App {
     public static void main(String[] args) {
         Random generateur = new Random();
         int caseActuelle = 0;
+        int nbPartie = 1;
         Scanner clavier = new Scanner(System.in);
         do {
             caseActuelle =0;
@@ -25,9 +26,15 @@ public class App {
             }
             if (20-caseActuelle !=0) {
                 System.out.println("Vous avez perdu !");
+                nbPartie++;
             }
         } while (20-caseActuelle != 0);
-         System.out.println("Vous avez gagné !");
+        if (nbPartie>1) {
+            System.out.println("Vous avez gagné en "+(nbPartie)+" parties !");
+        }else{
+            System.out.println("Vous avez gagné en "+(nbPartie)+" partie !");
+        }
+         
         clavier.close();
     }
     
