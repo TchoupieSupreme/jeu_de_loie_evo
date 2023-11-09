@@ -17,10 +17,10 @@ public class App {
                 caseActuelle += lancer;
                 System.out.println("Lancer "+(i+1)+" : vous avez faits "+lancer+". Vous êtes sur la case "+caseActuelle+" (encore "+(20-caseActuelle)+")");
             }
-            if (20-caseActuelle !=20) {
+            if (20-caseActuelle !=0) {
                 System.out.println("Vous avez perdu !");
             }
-        } while (20-caseActuelle != 0);
+        } while (20-caseActuelle == 0);
          System.out.println("Vous avez gagné !");
         clavier.close();
     }
