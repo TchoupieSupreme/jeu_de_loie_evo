@@ -75,7 +75,7 @@ public class App {
             System.out.println("Vous dépassez, vous avez perdu !");
             return gagne;
         } else {
-            System.out.println("Il vous en manque pour arriver à " + caseObjectif + " !");
+            System.out.println("Il vous en manque "+ (caseObjectif-caseCourante)+" pour arriver à " + caseObjectif + " !");
             return gagne;
 
         }
